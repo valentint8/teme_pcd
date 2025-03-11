@@ -102,3 +102,61 @@ This results in a simpler, faster communication process, though it lacks built-i
 ### ✅ Test Environment
 - Implemented the tests in **Python**.  
 ---
+
+Got it! Here's a **simple and clear section** with **no file-saving instructions**, just explaining how to **choose between TCP and UDP**, and how to **optionally use `--stop_and_wait`** for UDP.
+
+---
+
+## ✅ Example Command Script: Run Server and Client (TCP or UDP)
+
+```batch
+@echo off
+
+echo Starting Server on port 9001...
+start cmd /k python server.py --protocol udp --port 9001 --buffer_size 1024 --stop_and_wait
+
+timeout /t 2
+
+echo Running Client...
+python client.py --protocol udp --port 9001 --buffer_size 1024 --data_size 5000000000 --stop_and_wait
+```
+
+---
+
+### How It Works
+- Replace `udp` with `tcp` to run **TCP tests** instead of **UDP**.
+- For **UDP**, you can **add** or **remove** the `--stop_and_wait` option:
+  - With `--stop_and_wait`: enables **Stop-and-Wait mode** for reliability.
+  - Without it: runs in **Streaming mode** (fire-and-forget, faster but may lose packets).
+
+---
+
+### Examples
+
+#### ✅ TCP Example (No `--stop_and_wait` option)
+```batch
+start cmd /k python server.py --protocol tcp --port 9001 --buffer_size 1024
+timeout /t 2
+python client.py --protocol tcp --port 9001 --buffer_size 1024 --data_size 5000000000
+```
+
+#### ✅ UDP Example with Stop-and-Wait
+```batch
+start cmd /k python server.py --protocol udp --port 9001 --buffer_size 1024 --stop_and_wait
+timeout /t 2
+python client.py --protocol udp --port 9001 --buffer_size 1024 --data_size 5000000000 --stop_and_wait
+```
+
+#### ✅ UDP Example without Stop-and-Wait (Streaming)
+```batch
+start cmd /k python server.py --protocol udp --port 9001 --buffer_size 1024
+timeout /t 2
+python client.py --protocol udp --port 9001 --buffer_size 1024 --data_size 5000000000
+```
+
+---
+
+You can adjust:
+- `--port` for different ports.
+- `--buffer_size` for different message sizes.
+- `--data_size` to test with different amounts of data (1GB = `1000000000` bytes, 5GB = `5000000000` bytes).
