@@ -151,9 +151,44 @@ This results in a simpler, faster communication process, though it lacks built-i
 
 ---
 
+5GB Data transfer:
+
+### UDP With stop_and_wait
+- **Client**:  
+<img width="598" alt="image" src="https://github.com/user-attachments/assets/97772c4a-90c1-438e-b510-42be7e7224ff" />
+
+
+- **Server**:  
+<img width="553" alt="image" src="https://github.com/user-attachments/assets/1f242f0a-6d07-46a8-9a00-00a84a540544" />
+
+
+---
+
+### UDP Without stop_and_wait
+- **Client**:  
+<img width="604" alt="image" src="https://github.com/user-attachments/assets/57bde47e-947a-4630-9224-a05cadcb574d" />
+
+
+- **Server**:  
+<img width="584" alt="image" src="https://github.com/user-attachments/assets/d08ec54c-3a78-4b36-8e0c-0107f2da9fec" />
+
+
+---
+
+### TCP
+- **Client**:  
+<img width="567" alt="image" src="https://github.com/user-attachments/assets/e31bb01b-5bb1-49de-b7ca-2f18eea1789f" />
+
+
+- **Server**:  
+<img width="633" alt="image" src="https://github.com/user-attachments/assets/f1aa33f8-a4ff-4791-ad58-f9fe19ebf192" />
+
+
+---
+
 ### Summary of Results:
 - By the test results, the **TCP connection is generally slower** (based on my tests).  
-- The tests included sending **100MB**, **500MB**, and **1GB** of byte messages from a client to a server.  
+- The tests included sending **1GB** and **5GB** of byte messages from a client to a server.  
 - The messages were generally **1MB** in size, ensuring a fair comparison between TCP and UDP.
 
 ---
