@@ -93,7 +93,7 @@ This results in a simpler, faster communication process, though it lacks built-i
 ---
 
 ### Summary of Results:
-- By the test results, the **TCP connection is generally slower** (based on my tests).  
+- By the test results, the **TCP connection is generally slower and more reliable** compared to the UDP without stop_and_wait, but faster than UDP with stop_and_wait.  
 - The tests included sending **1GB** and **5GB** of byte messages from a client to a server.  
 - The messages were generally **1MB** in size, ensuring a fair comparison between TCP and UDP.
 
