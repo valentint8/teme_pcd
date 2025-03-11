@@ -1,0 +1,2 @@
+Sent END message to the server.
+UDP Stop-and-Wait Transmission Time: 37.19 seconds, Messages Sent: 976562, Bytes Sent: 1000000000
