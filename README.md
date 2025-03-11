@@ -22,7 +22,7 @@ This results in a simpler, faster communication process, though it lacks built-i
 ## ✅ Test Results
 
 ---
-1GB Data transfer:
+## 1GB Data transfer:
 
 ### UDP With stop_and_wait
 - **Client**:  
@@ -57,7 +57,7 @@ This results in a simpler, faster communication process, though it lacks built-i
 
 ---
 
-5GB Data transfer:
+## 5GB Data transfer:
 
 ### UDP With stop_and_wait
 - **Client**:  
