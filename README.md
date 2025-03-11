@@ -116,31 +116,38 @@ This results in a simpler, faster communication process, though it lacks built-i
 ## ✅ Test Results
 
 ---
+1GB Data transfer:
 
 ### UDP With stop_and_wait
 - **Client**:  
-  (Results placeholder)
+  <img width="587" alt="image" src="https://github.com/user-attachments/assets/6147e6a1-2e75-4804-9fd5-0f833cdd545d" />
+
 
 - **Server**:  
-  (Results placeholder)
+  <img width="538" alt="image" src="https://github.com/user-attachments/assets/a513a6d5-b27e-419c-82ab-aacce0c3deca" />
+
 
 ---
 
 ### UDP Without stop_and_wait
 - **Client**:  
-  (Results placeholder)
+  <img width="592" alt="image" src="https://github.com/user-attachments/assets/af17ee74-6454-451f-9967-7941597a8617" />
+
 
 - **Server**:  
-  (Results placeholder)
+  <img width="542" alt="image" src="https://github.com/user-attachments/assets/9a94e815-a02d-41bc-afea-af6b076f0762" />
+
 
 ---
 
 ### TCP
 - **Client**:  
-  (Results placeholder)
+  <img width="562" alt="image" src="https://github.com/user-attachments/assets/089f3f9c-b5de-4500-a442-4a5a607063f4" />
+
 
 - **Server**:  
-  (Results placeholder)
+  <img width="623" alt="image" src="https://github.com/user-attachments/assets/87b54972-e6c3-44d6-8ba8-257958629a8e" />
+
 
 ---
 
